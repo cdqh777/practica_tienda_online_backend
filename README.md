@@ -2,6 +2,12 @@
 
 API REST para gestionar una tienda online con NestJS + TypeORM + PostgreSQL.
 
+# Tienda Online API — TAW-251
+
+**Estudiante:** Carlos Daniel Quispe Huanca
+**CI:** 12604581  
+**Fecha:** 09 Mayo 2026
+
 ## Requisitos
 
 - Node.js >= 18
@@ -11,11 +17,9 @@ API REST para gestionar una tienda online con NestJS + TypeORM + PostgreSQL.
 ## Instalación
 
 ```bash
-# Clonar el repositorio
 git clone <url-del-repositorio>
 cd tienda-online
 
-# Instalar dependencias
 npm install
 ```
 
@@ -32,7 +36,7 @@ CREATE DATABASE tienda_online;
 | Variable      | Valor por defecto |
 |---------------|-------------------|
 | DB_HOST       | localhost         |
-| DB_PORT       | 5432              |
+| DB_PORT       | 5433              |
 | DB_USER       | postgres          |
 | DB_PASSWORD   | postgres          |
 | DB_NAME       | tienda_online     |
@@ -41,7 +45,7 @@ Para personalizar, puedes crear un archivo `.env` en la raíz o exportar las var
 
 ```bash
 export DB_HOST=localhost
-export DB_PORT=5432
+export DB_PORT=5433
 export DB_USER=postgres
 export DB_PASSWORD=tu_contraseña
 export DB_NAME=tienda_online
@@ -52,10 +56,8 @@ export DB_NAME=tienda_online
 ## Ejecución
 
 ```bash
-# Modo desarrollo (con hot-reload)
 npm run start:dev
 
-# Modo producción
 npm run build
 npm run start:prod
 ```
